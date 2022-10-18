@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  height: 100%;
+  background-color: black;
+}
+img {
+  width: 25vw;
+  height: 15rem;
+  margin: 0.8rem auto;
+  cursor: pointer;
+  object-fit: cover;
+}
+.container-1,
+.container-2 {
+  gap: 1rem;
+  margin: auto;
+  width: 82vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+  position: relative;
+}
+.container-2 {
+  margin-top: 6rem;
+}
+.container-1-thumbnail,
+.container-2-thumbnail {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 80vw;
+  bottom: 12%;
+}
+.container-1-thumbnail img,
+.container-2-thumbnail img {
+  width: 12vw;
+  object-fit: cover;
+  height: 6rem;
+  padding-right: 0.4rem;
+  cursor: pointer;
+}
+.container-1-thumbnail,
+.container-2-thumbnail {
+  display: none;
+}
+
+.zoomedImage {
+  position: fixed;
+  width: 80vw;
+  height: 24rem;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 6rem;
+  display: none;
+}
+.zoomedImage img {
+  width: 100%;
+  height: 100%;
+}
+.zoomedImage .leftArrow,
+.rightArrow {
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.leftArrow {
+  position: absolute;
+  left: -6%;
+  top: 50%;
+}
+.rightArrow {
+  position: absolute;
+  right: -6%;
+  top: 50%;
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: -6%;
+  top: -20%;
+  font-size: 4rem;
+  font-weight: bolder;
+}
